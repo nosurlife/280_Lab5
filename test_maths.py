@@ -71,6 +71,18 @@ class MathsTest(unittest.TestCase):
         
         #Assert
         self.assertEqual(result, expected)
+        
+    def test_factorial(self):
+        ''' Tests the factorial function. '''
+        # Arrange
+        factorial = 5
+        expected = 120
+        
+        #Act
+        result = maths.factorial(factorial)
+        
+        #Assert
+        self.assertEqual(result, expected)
     
     def test_convert_base_2(self):
         ''' Tests the convert_base function for base 2. '''
